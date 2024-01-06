@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    /* border: 1px solid blue; */
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    max-width: 480px;
+    min-height: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#titulo {
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+    color: rgb(33, 38, 39);
+}
+
+#formulario {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-tarea {
+    background-color: transparent;
+    color: rgb(26, 9, 112);
+    width: 60%;
+    margin-bottom: 30px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(48, 57, 58);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#input-tarea::placeholder {
+    color: rgb(48, 57, 58);
+    transition: all 0.5s ease-in-out;
+    font-size: 1rem;
+}
+
+#input-tarea:focus {
+    border-bottom-color: rgb(26, 9, 112);
+}
+
+#input-tarea:focus::placeholder {
+    color: rgb(26, 9, 112);
+}
+
+#btn-crear {
+    font-size: 0.9rem;
+    padding: 10px;
+    border: none;
+    background-color: rgb(26, 9, 112);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+}
+
+#btn-crear:hover {
+    scale: 1.15;
+    background-color: rgb(48, 57, 58);
+    color: white;
+}

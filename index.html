@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titulo -->
+        <title>Lista de Tareas Pendientes</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        
+        <div class="contenedor">
+            <h1 id="titulo">MIS TAREAS</h1>
+            <form id="formulario">
+                <input type="text" id="input-tarea" placeholder="Ingresa una tarea a la lista">
+                <button id="btn-crear">Crear Tarea</button>
+            </form>
+            <div id="contenedor-tareas">
+                <!-- Cada DIV de acá se agregará con JS al presionar click en el botón -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

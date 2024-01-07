@@ -1,8 +1,10 @@
 const botonCrearTarea = document.getElementById('btn-crear');
+const contenedorGeneral = document.querySelector('.contenedor');
 const contenedorTareas = document.getElementById('contenedor-tareas');
 
 const crearTarea = (evento) => {
     evento.preventDefault();
+    contenedorGeneral.style.paddingTop = '50px';
     
     const inputTarea = document.getElementById('input-tarea');
     const tareaIngresada = inputTarea.value;
